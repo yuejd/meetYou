@@ -31,5 +31,5 @@ change directory to config file
 ### Client 
  The client is written in objective-c for ios.
 
-### License 
+### Contact
 *jdyue19@gmail.com*
