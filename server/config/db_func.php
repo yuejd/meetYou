@@ -7,7 +7,7 @@ function connect_db() {
     if( !mysql_query( 'create database if not exists meetyou', $conn ) ) 
         exit( 'Error creating database: ' . mysql_error() );
     
-    mysql_select_db( 'meetyou', $conn );
+    mysql_select_db( DBNAME, $conn );
     mysql_query( "SET NAMES 'utf8'" );
     echo "Database connecting successfully\n";
     return $conn;
