@@ -29,7 +29,7 @@ change directory to config file
 ```
 
 ### Client 
- The client is written in objective-c for io.
+ The client is written in objective-c for ios.
 
 ### License 
 *jdyue19@gmail.com*
