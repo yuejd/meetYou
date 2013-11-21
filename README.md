@@ -2,8 +2,8 @@
 -----------
 A kind of mobile app. The source code consists of two parts: 
 
-* #####Server
-* #####Client
+* Server
+* Client
 
 ### Version ###
 1.0
