@@ -2,8 +2,8 @@
 -----------
 A kind of mobile app. The source code consists of two parts: 
 
-* ##### Server
-* ##### Client
+* #####Server
+* #####Client
 
 ### Version ###
 1.0
@@ -17,7 +17,7 @@ define( 'HOST', 'xxxxx' );
 define( 'USER', 'xxxxx' );
 define( 'PASSWORD', 'xxxxx' );
 ```
-##### Preparation ##### 
+##### Preparation 
 change directory to config file
 ```sh
 #create database.tables and insert test data into tables
@@ -28,8 +28,8 @@ change directory to config file
 ./config.sh testdata
 ```
 
-### Client ### 
+### Client 
  The client is written in objective-c for io.
 
-### License ### 
+### License 
 *jdyue19@gmail.com*
