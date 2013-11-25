@@ -10,6 +10,7 @@ for( $i = 0; $i < 100; $i++ ) {
     $email = $name.'@test.com';
     $birth = '2003-04-02';
     $age = (($i+3)*($i+2))%59;
+    $sex = $i % 7 % 2;
     $constellation = $constellations[$i%12];
     $height = 100 + $i / 2;
     $weight = 70 + $i / 2;
@@ -18,9 +19,9 @@ for( $i = 0; $i < 100; $i++ ) {
     $school = "school_teset_$i";
     $company = "company_test_$i";
     $hobby = "兴趣_$i";
-    $db_query = "insert into users (name, email, birth, age, constellation, height, 
+    $db_query = "insert into users (name, email, birth, age, sex, constellation, height, 
                                     weight, location, sign, school, company, hobby )
-                             values ('$name', '$email', '$birth', '$age', '$constellation', '$height', 
+                             values ('$name', '$email', '$birth', '$age', '$sex', '$constellation', '$height', 
                                     '$weight', '$location', '$sign', '$school', '$company', '$hobby')";
     $result = mysql_query( $db_query, $conn );
     if( !$result )

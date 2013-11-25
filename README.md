@@ -1,15 +1,21 @@
-## Meet You ##
+## Meet You 
 -----------
 A kind of mobile app. The source code consists of two parts: 
 
-* Server
-* Client
+* ##### Server
+* ##### Client
 
-### Version ###
+### Version 
 1.0
 
 ### Server
- The source code is written with php and mysql for database.The config file is used for 
+ The source code is written with php and mysql for database.
+
+#### Structure
+
+
+> ####config
+>> The config file is used for 
  preparation and testing.
  Modify config.php with your own configuration (HOST, USER, PASSWORD).
 ```php
@@ -17,7 +23,7 @@ define( 'HOST', 'xxxxx' );
 define( 'USER', 'xxxxx' );
 define( 'PASSWORD', 'xxxxx' );
 ```
-##### Preparation 
+##### Preparation  
 change directory to config file
 ```sh
 #create database.tables and insert test data into tables
@@ -28,8 +34,30 @@ change directory to config file
 ./config.sh testdata
 ```
 
-### Client 
- The client is written in objective-c for ios.
+> #### action
+>> The files in this directory are used for handling the requests from the do.php file.
+   ##### reg_act.php
+   ##### upd_info.php
+   ##### ......
+   
+> #### foundation
+>> This directory is for some function utilities or some classes define.
+   ##### cdbex.php
+>>> data base class for db controll.
 
-### Contact
+>> ##### func.php
+>>> some function define
+
+> ####do.php
+>> used for get requests and actions from server and redirect the requests to the files in the `action` directory.
+
+
+> ####include.php
+>> including function and class files.
+
+
+### Client  
+ The client is written in objective-c for io.
+
+### License 
 *jdyue19@gmail.com*
