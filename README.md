@@ -12,7 +12,7 @@ A kind of mobile app. The source code consists of two parts:
 ### Server
  The source code is written with php and mysql for database.
  It provides the API with URL to the client.The format of the API is like:
- xxxx.com/do.php?act=the-action[&para1m=the-param1[&para2=the-param2......]]
+ xxxx.com/do.php?act=action[&para1=param1[&para2=param2......]]
 
 #### Structure
 
