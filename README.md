@@ -54,7 +54,7 @@ change directory to config file
 >> ##### ......
 
 > ####do.php
->> used for get requests and actions from server and redirect the requests to the files in the `action` directory.
+>> used for get requests and actions from client and redirect the requests to the files in the `action` directory.
 
 
 > ####include.php
