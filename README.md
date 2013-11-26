@@ -1,15 +1,18 @@
 ## Meet You 
------------
+
 A kind of mobile app. The source code consists of two parts: 
 
-* ##### Server
-* ##### Client
+ * ####  Server
+
+ * ####  Client
 
 ### Version 
 1.0
 
 ### Server
  The source code is written with php and mysql for database.
+ It provides the API with URL to the client.The format of the API is like:
+ xxxx.com/do.php?act=the-action[&para1m=the-param1[&para2=the-param2......]]
 
 #### Structure
 
@@ -36,17 +39,19 @@ change directory to config file
 
 > #### action
 >> The files in this directory are used for handling the requests from the do.php file.
-   ##### reg_act.php
-   ##### upd_info.php
-   ##### ......
+##### reg_act.php
+##### upd_info.php
+##### ......
    
 > #### foundation
 >> This directory is for some function utilities or some classes define.
-   ##### cdbex.php
+##### cdbex.php
 >>> data base class for db controll.
 
 >> ##### func.php
 >>> some function define
+
+>> ##### ......
 
 > ####do.php
 >> used for get requests and actions from server and redirect the requests to the files in the `action` directory.
@@ -55,9 +60,11 @@ change directory to config file
 > ####include.php
 >> including function and class files.
 
+> ####......
+
 
 ### Client  
- The client is written in objective-c for io.
+ The client is written in objective-c for ios.
 
 ### License 
 *jdyue19@gmail.com*
